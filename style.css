@@ -217,9 +217,12 @@ body {
 }
 
 @media screen and (max-width: 605px){
+    .name {
+        font-size: 72px;
+    }
     .search_bar {
         width: 447px;
-        height: 42px;
+        height: 40px;
     }
     .google_search {
         width: 380px;
@@ -235,9 +238,44 @@ body {
 }
 
 @media screen and (max-width: 505px){
+    .icon_bg {
+        width: 34px;
+        height: 34px;
+    }
+    .icon_bg > img {
+        width: 14px;
+        height: 14px;
+    }
+    .hamberg {
+        width: 230px;
+        height: 170px;
+        margin-top: 12px;
+        padding: 10px 14px 0;
+    }
+    .hamberg > li {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+    .hamberg > li > i {
+        font-size: 20px;
+        padding: 6px;
+    }
+    .hamberg > li >p {
+        font-size: 12px;
+        margin: 0;
+    }
+    .loginBtn {
+        font-size: 12px;
+        padding: 6px 21px;
+        height: 28px;
+    }
+    .name {
+        font-size: 56px;
+    }
     .search_bar {
         width: 335px;
-        height: 42px;
+        height: 36px;
     }
     .google_search {
         width: 270px;
@@ -245,5 +283,21 @@ body {
     .container_menu {
         width: 337px;
         height: 350px;
+    }
+    .tile {
+        width: 90.5px;
+        height: 90.5px;
+        padding: 6px;
+        margin: 8px;
+    }
+    .tile > i {
+        font-size: 16px;
+        width: 42px;
+        height: 42px;
+    }
+    .tile_name {
+        margin-top: 4px;
+        padding: 2px 8px;
+        width: 82px;
     }
 }
