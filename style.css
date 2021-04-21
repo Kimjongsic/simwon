@@ -221,3 +221,10 @@ body {
 .tile:hover {
     background-color: rgba(32, 33, 36,.1);
 }
+
+@media screen and (max-width: 605px){
+    .search_bar {
+        width: 447px;
+        height: 42px;
+    }
+}
