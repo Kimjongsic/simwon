@@ -42,18 +42,19 @@ body {
     border-radius: 10px;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
-.hamberg > li {
+.hamberg > a {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration: none;
     width: 80px;
     height: 80px;
     padding: 6px;
     cursor: pointer;
 }
-.hamberg > li:hover {
+.hamberg > a:hover {
     background-color: #e8f0fe;
     border: none;
     border-radius: 8px;
@@ -64,13 +65,14 @@ body {
 .hamberg .right_icon {
     float: right;
 }
-.hamberg > li >p {
+.hamberg > a > p {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: black;
     margin: 0;
 }
-.hamberg > li > i {
+.hamberg > a > i {
     font-size: 28px;
     padding: 8px;
 }
@@ -255,16 +257,16 @@ body {
         margin-top: 12px;
         padding: 10px 14px 0;
     }
-    .hamberg > li {
+    .hamberg > a {
         width: 60px;
         height: 60px;
         padding: 5px;
     }
-    .hamberg > li > i {
+    .hamberg > a > i {
         font-size: 20px;
         padding: 6px;
     }
-    .hamberg > li >p {
+    .hamberg > a >p {
         font-size: 12px;
         margin: 0;
     }
