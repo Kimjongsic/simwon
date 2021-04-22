@@ -112,8 +112,17 @@
 
     <script>
         function myBtn() {
-            document.getElementById("Dropdown").classList.toggle("show");
+            // document.getElementById("Dropdown").classList.toggle("show");
+            document.getElementById("Dropdown").style.display='block';
         }    
+    </script>
+    <script>
+        window.addEventListener('mouseup', function(event){
+            var downs = document.getElementById('Dropdown');
+            if(event.target != downs && event.target.parentNode != downs){
+                downs.style.display = 'none';                    
+            }
+        })
     </script>
 </body>
 <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
