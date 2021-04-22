@@ -12,12 +12,12 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="icon">
+        <div id="button" class="icon">
             <div class="icon_bg" onclick="myBtn()">
-                <img src="\icon\dots-menu.png" alt="아이콘">
+                <img class="icon_img" src="\icon\dots-menu.png" alt="아이콘">
             </div>
             <ul id="Dropdown" class="hamberg">
-                <li class="left_icon">
+                <li href="" class="left_icon">
                     <i class="fas fa-school" style="color: rgb(66, 133, 244);"></i>
                     <p>소개</p>
                 </li>
@@ -112,17 +112,26 @@
 
     <script>
         function myBtn() {
-            // document.getElementById("Dropdown").classList.toggle("show");
-            document.getElementById("Dropdown").style.display='block';
-        }    
-    </script>
-    <script>
-        window.addEventListener('mouseup', function(event){
-            var downs = document.getElementById('Dropdown');
-            if(event.target != downs && event.target.parentNode != downs){
-                downs.style.display = 'none';                    
+            document.getElementById("Dropdown").classList.toggle("show");
+        }
+        document.getElementById("Dropdown").addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+        window.onclick = function(event) {
+            if (!event.target.matches('.icon_bg') && !event.target.matches('.icon_img')) {
+              
+                var dropdowns = 
+                document.getElementsByClassName("hamberg");
+                  
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
             }
-        })
+        }
     </script>
 </body>
 <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->

@@ -43,7 +43,10 @@ body {
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
 .hamberg > li {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 80px;
     height: 80px;
