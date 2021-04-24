@@ -135,3 +135,15 @@ a {
     box-sizing: border-box;
     height: 34px;
 }
+
+@media screen and (max-width: 505px) {
+    .wrapper {
+        align-items: flex-start;
+    }
+    .container {
+        border: none;
+    }
+    .content {
+        padding-top: 24px;
+    }
+}

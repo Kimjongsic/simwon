@@ -215,3 +215,12 @@ select {
 .gender_bar:focus-within {
     border: 2px solid rgb(66, 133, 244);
 }
+
+@media screen and (max-width: 505px) {
+    .wrapper {
+        align-items: flex-start;
+    }
+    .container {
+        border: none;
+    }
+}
