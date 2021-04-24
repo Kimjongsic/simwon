@@ -108,6 +108,7 @@ select {
 #pswd1View {
     padding-left: 8px;
     color: rgb(183, 183, 183);
+    cursor: pointer;
 }
 #pswd2 {
     width: 280px;

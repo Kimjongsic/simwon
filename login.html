@@ -22,7 +22,8 @@
                         <input type="text" name="user_id" class="id-pw" placeholder="아이디">
                     </div>
                     <div class="id-pw_bar">
-                        <input type="password" name="user_pw" class="id-pw" placeholder="비밀번호">
+                        <input type="password" name="user_pw" id="pswd" class="id-pw" placeholder="비밀번호">
+                        <i id="pswdView" class="far fa-eye" onclick="pwViewer()"></i>
                     </div>
                 </div>
                 <div class="Btn">
@@ -32,5 +33,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function pwViewer() {
+            var x = document.getElementById('pswd');
+            if(x.type === "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>
