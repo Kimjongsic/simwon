@@ -1,6 +1,7 @@
 body {
     font-family: 'Josefin Sans', 'Nanum Gothic', sans-serif;
 }
+
 .navbar {
     display: flex;
     justify-content: flex-end;
